@@ -80,8 +80,10 @@ Educating people about Atala PRISM presents an opportunity for the Atala tribe t
 
 Input Output Global (IOG) will be the credential issuer for the AP101: Foundations of Self-Sovereign Identity (AP101) course. The credential received will be a prerequisite for the learner to enroll for the AP102: Building with Atala PRISM (AP102) course and the AP103: Human-centric Design for Decentralized Applications course (AP103).
 
+![**Fig. 1** Trust Framework worksheet](/images/fig1.png)
 **Fig 1.** Completed trust framework worksheet that helped conceptualize this governance framework
 
+![**Fig. 2** Business Process Flow](/images/fig2.png)
 **Fig 2.** Business process flow of credentials for this GF which allows or declines a learner enrollment into the AP102 and/or AP103 courses
 
 ### Website
@@ -360,8 +362,8 @@ The following technical requirements will enable the implementation of this GF. 
 * A verifier tool is needed to verify that a learner completed the latest version of the AP101 course
 * A public webpage for the trust registry and the GF is required to demonstrate how credential verification works with the GF and TR
 
-**Fig. 12** Technical requirements
 ![**Fig. 12** Technical requirements](/images/fig12.png)
+**Fig. 12** Technical requirements
 
 ### 12.5 Information Trust Requirements
 
