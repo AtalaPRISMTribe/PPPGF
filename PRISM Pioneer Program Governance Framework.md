@@ -361,6 +361,7 @@ The following technical requirements will enable the implementation of this GF. 
 * A public webpage for the trust registry and the GF is required to demonstrate how credential verification works with the GF and TR
 
 **Fig. 12** Technical requirements
+![**Fig. 12** Technical requirements](/images/fig12.png)
 
 ### 12.5 Information Trust Requirements
 
