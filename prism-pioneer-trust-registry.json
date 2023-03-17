@@ -1,0 +1,13 @@
+[
+    {
+      "trustedParty":"IOG - Atala PRISM Tribe",
+      "website":"http://www.atalaprism.io",
+      "did":"did:prism:7031c1b1a755687a2fdd351e2bcdf2d9bce60ac469b08d2e9c37b2de5ff8297d",
+      "publicKey":"04e51dec7338fab51e729b4561b8b53013b4b71defb5da5f9d64694e869a486bb329c0fb744c17ffe70f464502fe8e7f72046d4fb470c3da2fbe7e63760b01e09c",
+      "role":"issuer",
+      "credential":["Atala PRISM Pioneer Program"],
+      "validFrom":"2020-01-01T10:05:08",
+      "validUntil":"2027-01-01T10:05:08",
+      "status":"current"
+    }
+]
