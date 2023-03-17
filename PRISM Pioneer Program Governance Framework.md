@@ -1,10 +1,10 @@
 # PRISM Pioneer Credential Governance Framework
 
-Version: 0.1
+Version: 1.0
 
-September 2, 2022
+March 17, 2023
 
-This publicly available document is a work in progress and is not yet approved by Input Output Global on 2 September 2022.
+This publicly available document is a work in progress and is not yet approved by Input Output Global on 17 March 2023.
 
 ## Table of Contents
 
@@ -28,7 +28,7 @@ This document is a deliverable of Input Output Global’s Atala PRISM Ecosystem 
 | Version | Date Approved | Revisions                                   |
 | ------- | ------------- | ------------------------------------------- |
 | 0.1     | 2 Sept 2022   | Initia ldraft to be used as a learning tool |
-|         |               |                                             |
+| 1.0     | 17 March 2023 | Updated to align with implementation of GF  |
 |         |               |                                             |
 
 ### Sign Offs
@@ -56,7 +56,7 @@ This document is a deliverable of Input Output Global’s Atala PRISM Ecosystem 
 
 ### Terms of Use
 
-This document intends to establish a Governance Framework and a learning tool for the Atala PRISM Pioneer Program. IOG Atala PRISM tribe will be the only issuer and verifier of the credential that is governed by this framework. This document MAY be used by the Atala PRISM community as a reference implementation when drawing up their work ecosystem governance frameworks. 
+This document intends to establish a Governance Framework and a learning tool for the Atala PRISM Pioneer Program. IOG Atala PRISM tribe will be the only issuer and verifier of the credential that is governed by this framework. This document MAY be used by the Atala PRISM community as a reference implementation when drawing up their ecosystem governance frameworks. 
 
 ## 1. Introduction
 
@@ -89,7 +89,7 @@ Input Output Global (IOG) will be the credential issuer for the AP101: Foundatio
 ### Website
 
 The [Atala PRISM website](https://atalaprism.io/) provides more context about the Atala PRISM Pioneer Program. It will include information related to this GF that will explain the context, purpose, and process surrounding this GF.
-The [ToIP Governance Metamodel Specification Companion Guide](https://trustoverip.org/wp-content/uploads/ToIP-Governance-Metamodel-Specification-Companion-Guide-V1.0-2022-12-21.pdf) version 1.0, 21 December 2021, was used to model this GF. A signed-off version of this GF and the associated trust registry will be available on the Atala PRISM website. The website will also include links to translated copies of this GF as well as examples of other governance frameworks which learners MAY use as examples to construct their ecosystem GFs.
+The [ToIP Governance Metamodel Specification Companion Guide](https://trustoverip.org/wp-content/uploads/ToIP-Governance-Metamodel-Specification-Companion-Guide-V1.0-2022-12-21.pdf) version 1.0, 21 December 2021, was used to model this GF. A signed-off version of this GF and the associated trust registry will be available on GitHub and the Atala PRISM website. The website will also include links to translated copies of this GF as well as examples of other governance frameworks which learners MAY use as examples to construct their ecosystem GFs.
 
 ### Acknowledgements
 
@@ -135,8 +135,8 @@ The duties of the administering authority are listed below:
 
 The administering authority must follow the following operational policies: 
 
-* Policy 5.1 The administering authority MUST ensure that a verifiable credential (VC) gets issued to learners for completing the AP101 course within the Atala Prism Pioneer Program.
-* Policy 5.2 The administering authority MUST ensure that the enrolment processes for the AP102 and AP103 courses verify the AP101 credential before allowing learners to enroll for these courses.
+* Policy 5.1 The administering authority MUST ensure that a verifiable credential (VC) gets issued to learners for completing the AP101 course within the Atala PRISM Pioneer Program.
+* Policy 5.2 The administering authority MUST ensure that the enrollment processes for the AP102 and AP103 courses verify the AP101 credential before allowing learners to enroll for these courses.
 
 ## 6. Scope
 
@@ -148,7 +148,6 @@ The first ecosystem scope is limited to the Atala PRISM tribe issuing verifiable
 
 * A certificate of completion will be issued, NOT a certificate of competence.
 * Each section of the course will have multiple-choice questions to test retained knowledge. 
-* Learners must obtain 80% even if multiple attempts are needed to get 80%.
 * Qualification levels will not be categorized, e.g., 1st percentile, etc.
 * The amount of time spent in each section will not impact the grade.
 * The passing of quizzes is sufficient to prove knowledge.
@@ -159,7 +158,7 @@ This document is the GF for the Atala PRISM Pioneer courses, for which credentia
 
 The first credential, AP101, contains the following information:
 
-**Credential Name**: Atala PRISM Pioneer Program - AP101: Foundations of Self-Sovereign Identity
+**Credential Name**: Atala PRISM Pioneer Program - AP101: Foundations of Decentralized Identity
 
 **Credential Type**: Certificate of Completion 
 
@@ -167,11 +166,11 @@ The first credential, AP101, contains the following information:
 
 **Course Version**: 1.0
 
-**Participant Full Name**: 
+**Canvas Student ID**: 
 
-**Participant Email Address**: 
+**Canvas Course ID**: 
 
-**Date obtained:**
+**Credential Issue Date:**
 
 The second credential, AP102, contains the following information. The course version will be based on the version of the PRISM SDK being taught in the course content.
 
@@ -183,11 +182,11 @@ The second credential, AP102, contains the following information. The course ver
 
 **Course Version**: 1.4.1
 
-**Participant Full Name**: 
+**Canvas Student ID**: 
 
-**Participant Email Address**:
+**Canvas Course ID**: 
 
-**Date obtained**: 
+**Credential Issue Date:**
 
 The third credential, AP103, contains the following information. The course version will be based on the version of the PRISM SDK being taught in the course content. 
 
@@ -199,11 +198,11 @@ The third credential, AP103, contains the following information. The course vers
 
 **Course Version**: 1.0
 
-**Participant Full Name**: 
+**Canvas Student ID**: 
 
-**Participant Email Address**:
+**Canvas Course ID**: 
 
-**Date obtained**: 
+**Credential Issue Date:**
 
 ### Holding Credentials
 
@@ -219,7 +218,7 @@ When verifying the AP101 course credential, a verifier needs to trust the creden
 
 ### Data to be verified
 
-Verifiers must be able to confirm that the Credential Name is "Atala PRISM Pioneer Program - AP101: Foundations of Self-Sovereign Identity", the Credential Type is a "certificate of completion," the course name is "AP101: Foundations of Self-Sovereign Identity, "the participant's full name and email address as an existing student/learner, the VC has not been revoked, and the version is the same as current course version on course catalog, before allowing the learner to enroll for the AP102 and/or AP103 courses. If the version is lower than the current version, the learner MUST get prompted to review the new content in the fundamentals course before enrolling for AP102 or AP103.
+Verifiers must be able to confirm that the Credential Name is "Atala PRISM Pioneer Program - AP101: Foundations of Self-Sovereign Identity", the Credential Type is a "certificate of completion," the course name is "AP101: Foundations of Self-Sovereign Identity," the Student ID and Course ID, the VC has not been revoked, and the version is the same as current course version on course catalog, before allowing the learner to enroll for the AP102 and/or AP103 courses. If the version is lower than the current version, the learner MUST get prompted to review the new content in the fundamentals course before enrolling for AP102 or AP103.
 
 ### Data storage
 
