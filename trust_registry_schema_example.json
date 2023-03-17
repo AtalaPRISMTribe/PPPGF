@@ -1,0 +1,77 @@
+Trust Registry Schema:
+----------------------
+
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "trustedParty": {
+                "type": "string"
+            },
+            "website": {
+                "type": "string",
+                "format": "uri"
+            },
+            "did": {
+                "type": "string",
+                "format": "uri"
+            },
+            "publicKey": {
+                "type": "string"
+            },
+            "role": {
+                "type": "string",
+                "enum": ["issuer", "verifier"]
+            },
+            "credentialType": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "validFrom": {
+                "type": "string",
+                "format": "date-time"
+            },
+            "validUntil": {
+                "type": "string",
+                "format": "date-time"
+            },
+            "status": {
+                "type": "string",
+                "enum": ["current", "expired", "terminated", "revoked"]
+            }
+        },
+        "required": ["trustedParty", "did", "publicKey", "role", "validFrom", "status"]
+    },
+    "title": "atalaPrismTrustRegistry"
+}
+
+Examples:
+---------
+
+[
+    {
+      "trustedParty":"IOG - Atala PRISM Tribe (Dummy data!)",
+      "website":"http://www.atalaprism.io",
+      "did":"did:prism:12345",
+      "publicKey":"482C73FE",
+      "role":"issuer",
+      "credential":["Atala PRISM Pioneer Program"],
+      "validFrom":"2020-01-01T10:05:08",
+      "validUntil":"2027-01-01T10:05:08",
+      "status":"current"
+    },
+	{
+      "trustedParty":"IOG - Atala PRISM Tribe (Dummy data!)",
+      "website":"http://www.atalaprism.io",
+      "did":"did:prism:12345",
+      "publicKey":"482C73FE",
+      "role":"verifier",
+      "credential":["Atala PRISM Pioneer Program"],
+      "validFrom":"2020-01-01T10:05:08",
+      "validUntil":"2027-01-01T10:05:08",
+      "status":"current"
+    }
+]
