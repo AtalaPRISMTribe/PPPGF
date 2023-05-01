@@ -9,5 +9,14 @@
       "validFrom":"2020-01-01T10:05:08",
       "validUntil":"2027-01-01T10:05:08",
       "status":"current"
+    },
+  {
+      "trustedParty":"IOG - Atala PRISM Tribe",
+      "website":"http://www.atalaprism.io",
+      "role":"verifier",
+      "credential":["Atala PRISM Pioneer Program"],
+      "validFrom":"2020-01-01T10:05:08",
+      "validUntil":"2027-01-01T10:05:08",
+      "status":"current"
     }
 ]
