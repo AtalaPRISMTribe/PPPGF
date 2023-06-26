@@ -1,10 +1,6 @@
 # PRISM Pioneer Credential Governance Framework
 
-Version: 1.0
-
-March 17, 2023
-
-This publicly available document is a work in progress and is not yet approved by Input Output Global on 17 March 2023.
+Version: 1.1
 
 ## Table of Contents
 
@@ -76,8 +72,6 @@ Input Output Global (IOG) and the Atala PRISM tribe would like to thank the foll
 * Authors:
   * Anushka Soma-Patel
   * Peter Vielhaber
-* Reviewers:
-  * Tony Rose
 
 ## 2. Terminology
 
@@ -137,7 +131,11 @@ The first credential, AP101, contains the following information:
 
 **Canvas Student ID**: 
 
-**Canvas Course ID**: 
+**Canvas Course ID**:
+
+**Student Name**:
+
+**Student Email**:
 
 **Credential Issue Date:**
 
@@ -153,7 +151,11 @@ The second credential, AP102, contains the following information. The course ver
 
 **Canvas Student ID**: 
 
-**Canvas Course ID**: 
+**Canvas Course ID**:
+
+**Student Name**:
+
+**Student Email**:
 
 **Credential Issue Date:**
 
@@ -169,7 +171,11 @@ The third credential, AP103, contains the following information. The course vers
 
 **Canvas Student ID**: 
 
-**Canvas Course ID**: 
+**Canvas Course ID**:
+
+**Student Name**:
+
+**Student Email**:
 
 **Credential Issue Date:**
 
@@ -187,7 +193,7 @@ When verifying the AP101 course credential, a verifier needs to trust the creden
 
 ### Data to be verified
 
-Verifiers must be able to confirm that the Credential Name is "Atala PRISM Pioneer Program - AP101: Foundations of Self-Sovereign Identity", the Credential Type is a "Course Completion Credential," the course name is "AP101: Foundations of Self-Sovereign Identity, “ the Student ID and Course ID, the VC has not been revoked, and the version is the same as current course version on course catalog, before allowing the learner to enroll for the AP102 and/or AP103 courses. If the version is lower than the current version, the learner MUST get prompted to review the new content in the fundamentals course before enrolling for AP102 or AP103.
+Verifiers must be able to confirm that the Credential Name is "Atala PRISM Pioneer Program - AP101: Foundations of Self-Sovereign Identity", the Credential Type is a "Course Completion Credential," the course name is "AP101: Foundations of Self-Sovereign Identity, “ the Student ID, Student Name, Student Email, and Course ID, the VC has not been revoked, and the version is the same as current course version on course catalog, before allowing the learner to enroll for the AP102 and/or AP103 courses. If the version is lower than the current version, the learner MUST get prompted to review the new content in the fundamentals course before enrolling for AP102 or AP103.
 
 ### Data storage
 
@@ -207,7 +213,13 @@ This GF governs the following artifacts:
 
 ### Trust Decisions Enabled
 
-This GF enables two trust decisions. The first is whether the learner completed the AP101 course, and the second is whether the learner completed the latest version of the AP101 course.
+This GF enables several trust decisions.
+1. Whether a learner completed the AP101 course.
+2. Did the learner complete the latest version of the AP101 course.
+3. Did the learner complete the latest version of the AP102 course.
+4. Did the learner complete the latest version of the AP103 course.
+
+
 
 
 ## 7. Objectives
@@ -239,7 +251,7 @@ Actors:
 
 * Issuer - IOG Atala Tribe
 * Holder - Any pioneer who successfully completed AP101
-* Verifier - IOG Atala Tribe
+* Verifier - IOG Atala Tribe, Student Reader
 
 ## 10. Revisions
 
@@ -303,7 +315,7 @@ The Risk Assessment template, provided by ToIP, can be found [here](https://trus
 The governance and business requirements are outlined in the scope section (section 6). The basic requirements are as follows:
 
 * IOG is the sole issuer
-* IOG is the sole verifier
+* IOG and Student Reader are the verifiers
 * IOG will use Cardano Testnet to anchor IOG DID to issue credentials
 * Holders will use a PRISM compatible wallet to receive credentials
 * AP101 is a prerequisite credential to enroll for AP102 and AP103 courses
@@ -336,11 +348,3 @@ The American Institute of Certified Public Accountants (AICPA) Assurance Service
   * Trust community members of this GF agree to keep the information they receive confidential.
 * Information privacy
   * Trust community members of this GF agree to respect the privacy of information of holders and not use information collected for purposes other than that which is approved by the holder.
-
-## Revision History
-
-| Version | Date Approved | Revisions                                   |
-| ------- | ------------- | ------------------------------------------- |
-| 0.1     | 2 Sept 2022   | Initial draft to be used as a learning tool |
-| 1.0     | 17 March 2023 | Updated to align with implementation of GF  |
-|         |               |                                             |

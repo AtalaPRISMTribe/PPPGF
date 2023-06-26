@@ -18,5 +18,14 @@
       "validFrom":"2020-01-01T10:05:08",
       "validUntil":"2027-01-01T10:05:08",
       "status":"current"
+    },
+  {
+      "trustedParty":"Student Reader",
+      "website":"http://studentreader.io",
+      "role":"verifier",
+      "credential":["Atala PRISM Pioneer Program"],
+      "validFrom":"2020-01-01T10:05:08",
+      "validUntil":"2027-01-01T10:05:08",
+      "status":"current"
     }
 ]
