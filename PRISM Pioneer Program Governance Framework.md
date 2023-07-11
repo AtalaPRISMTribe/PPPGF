@@ -303,7 +303,7 @@ The following terms are used within and are specific to this GF:
 | Issuer Tool                        | The application/tool a party uses to issue VCs.              |
 | Learner                            | People taking the Atala PRISM Pioneer Program courses.       |
 | Trust Community                    | The parties that participate in a GF to enable a trusted ecosystem amongst parties that issue, hold and verify VCs. |
-| Veriifable Presentation            | The schema/set of data requested from a holder by a verifier. |
+| Verifiable Presentation            | The schema/set of data requested from a holder by a verifier. |
 
 ### 12.2 Risk Assessment
 
